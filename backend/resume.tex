@@ -1,0 +1,133 @@
+\documentclass[a4paper, 8pt]{article}
+
+% --- PACKAGES ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0.4in, right=0.4in, top=0.3in, bottom=0.2in]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+
+% --- DOCUMENT SETUP ---
+\definecolor{linkblue}{HTML}{0000EE}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkblue,
+    urlcolor=linkblue,
+    pdfborder = {0 0 0},
+}
+
+% --- LAYOUT CUSTOMIZATION ---
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+
+\titleformat{\section}
+  {\Large\scshape\raggedright}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{4pt}
+
+\setlist[itemize]{
+    leftmargin=*, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt
+}
+
+% --- DOCUMENT START ---
+\begin{document}
+
+% --- HEADER: PERSONAL DATA ---
+\begin{center}
+    {\Huge\textbf{Huma Naaz Mohammad}}\\
+    
+    \vspace{2pt}
+    +91 8793955356 ~|~ 
+    \href{mailto:humanaaz.mohammad@gmail.com}{humanaaz.mohammad@gmail.com} ~|~ 
+    \href{https://www.linkedin.com/in/huma-naaz-mohammad-8a6251296/}{LinkedIn} ~|~ 
+    \href{https://github.com/naazie}{GitHub} ~|~ 
+    \href{https://leetcode.com/humanaaz/}{LeetCode}
+\end{center}
+
+% --- EDUCATION (Updated with Minor) ---
+\section*{Education}
+\textbf{Walchand College of Engineering, Sangli} \hfill \textbf{2023 --- 2027} \\
+\textit{B. Tech. in Computer Science (Minor in Fintech)} \hfill \textit{CGPA: 9.12 / 10}
+
+\textbf{Arihant College of Arts, Commerce and Science, Pune} \hfill \textbf{2021 --- 2023} \\
+\textit{Junior College (11th and 12th)} \hfill \textit{Percentage: 83.3\%}
+
+\textbf{Bishops Co-Ed School, Kalyani Nagar, Pune} \hfill \textbf{2008 --- 2021} \\
+\textit{Schooling - ICSE Board} \hfill \textit{Percentage: 95.1\%}
+
+% --- EXPERIENCE (Updated with Impact) ---
+\section*{Work Experience}
+\textbf{AptTech} - Internship \hfill \textbf{Summer 2025}
+\begin{itemize}
+    \item Designed and built a full-stack web application connecting students with mentors and teachers within the institute.
+    \item Developed a responsive user interface using Next.js and Tailwind CSS with secure authentication and real-time data handling via Firebase.
+\end{itemize}
+
+% --- PROJECTS (Updated with Impact) ---
+\section*{Projects}
+\textbf{Real-Time Messaging Platform} \hfill \href{https://github.com/naazie/TheHumanDiscord}{GitHub}\\
+\textit{MERN, Socket.io}
+\begin{itemize}
+    \item Architected a real-time messaging system using WebSockets (Socket.IO) with multi-client synchronization and persistent storage.
+    \item Designed server/channel-based communication architecture with JWT authentication and protected REST APIs.
+    \item Implemented global socket lifecycle management in React to prevent duplicate connections and render-loop issues.
+\end{itemize}
+\vspace{2pt}
+
+\textbf{Latent Semantic Analysis–Based Document Clustering} \hfill \href{https://github.com/naazie/ML-ISE2-Final}{GitHub}
+\begin{itemize}
+    \item Developed an Latent Semantic Analysis(LSA) pipeline using Singular Value Decomposition(SVD) to transform raw text into dense embeddings for unsupervised topic discovery.
+    \item Built semantic similarity networks using Cosine Similarity to automate document clustering.
+\end{itemize}
+\vspace{2pt}
+
+\textbf{AI-Powered Laptop Recommendation Website - SmartSelect: Tech, Chosen Right} \hfill 
+\href{https://github.com/naazie/SmartSelect-AI-Powered-Laptop-Recommendation}{GitHub}\\
+\textit{ReactJS, Python }
+\begin{itemize}
+    \item An LLM-API powered web application for personalized laptop recommendations based on user needs and budget.
+    \item Implemented sentiment analysis and keyword extraction on real user reviews to provide transparent pros, cons, and feature comparisons.
+\end{itemize}
+
+% --- TECHNICAL SKILLS (Updated and Reorganized) ---
+\section*{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+    \textbf{Languages}    & C++, Python\\
+    \textbf{Web Tech}      & HTML, CSS, JavaScript, React, MongoDB, SQL\\
+    \textbf{Core CS}      & Data Structures \& Algorithms, OOP, OS, DBMS \\
+    \textbf{ML}           & Regression, Classification, Clustering, Feature Engineering, Cross-Validation, Hyperparameter Tuning.\\
+    \textbf{Developer Tools} & Git, Linux, Docker/Kubernetes \\
+    \textbf{Fintech Coursework} & {Introduction to Financial Markets, Risk Management and Compliance} 
+\end{tabularx}
+
+% --- EXPERIENCE (Updated with Impact) ---
+\section*{Experience}
+\textbf{WLUG (Walchand Linux Users' Group)} \hfill \textbf{2023 --- Present}
+\begin{itemize}
+    \item Joined as an active member, conducted 3 annual Linux workshops, and led open-source community discussions.
+    \item Served as Assistant Club Service Director (2024–2025); presented in The Linux Vault (100+ participants) and volunteered in Open Source Day, Linux Diary, and Metamorphosis 2k24.
+    \item Currently serving as the main designer (May 2025–Present); leading visual design for club events, and volunteered in LinuxDiary 6.0.
+\end{itemize}
+
+\textbf{WCE ACSES (Association of Computer Science and Engineering Students)} \hfill \textbf{2023 --- 2025}
+\begin{itemize}
+    \item Appointed Assistant Secretary (2024–2025)
+     \item Authored and delivered technical presentations on C++ and OOP principles to audiences of more than 200 students, fostering community engagement and simplifying complex topics.
+\end{itemize}
+
+% --- ACHIEVEMENTS ---
+\section*{Achievements}
+\begin{itemize}
+    \item \textbf{2nd Runner-up}, MongoDB workshop by ACM Student Chapter \hfill \textit{Jan 2025}
+    \item \textbf{Published Research Paper}: "Plastic Waste Management: Awareness and Recycling for Environmental Justice" \hfill \textit{Jan 2025}
+    \item \textbf{Finalist}, Standout by Personality Advancement Circle of Engineers, WCE (180+ participants) \hfill \textit{Aug 2023}
+\end{itemize}
+
+\end{document}
