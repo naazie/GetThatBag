@@ -10,7 +10,7 @@ export default function ScraperControl() {
     setStatus('running');
     setLogs('Initializing Scraper for Summer 2026 roles...\n');
     try {
-      const res = await axios.post('http://localhost:5000/api/run-scraper');
+      const res = await axios.post('https://getthatbag.onrender.com/api/run-scraper');
       setLogs(prev => prev + res.data.output + '\n--- Finished ---');
       setStatus('done');
     } catch (err) {

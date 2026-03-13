@@ -19,7 +19,7 @@ export default function App() {
   const fetchJobs = async () => {
     setLoading(true);
     try {
-      const res = await axios.get('http://localhost:5000/api/jobs');
+      const res = await axios.get('https://getthatbag.onrender.com/api/jobs');
       setJobs(Array.isArray(res.data) ? res.data : []);
     } catch (err) { 
       console.error("MongoDB Sync Error:", err); 
@@ -34,7 +34,7 @@ export default function App() {
   const toggleTrack = async (job) => {
     const newStatus = !job.is_tracked;
     try {
-      await axios.post('http://localhost:5000/api/jobs/track', {
+      await axios.post('https://getthatbag.onrender.com/api/jobs/track', {
         job_id: job._id, 
         is_tracked: newStatus
       });
@@ -49,7 +49,7 @@ export default function App() {
   const deleteJob = async (jobId) => {
     if (!window.confirm("Remove this role from your database?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/jobs/delete?job_id=${jobId}`);
+      await axios.delete(`https://getthatbag.onrender.com/api/jobs/delete?job_id=${jobId}`);
       setJobs(prev => prev.filter(j => j._id !== jobId));
     } catch (err) {
       alert("Delete failed. Check if backend is running.");
