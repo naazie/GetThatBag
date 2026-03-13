@@ -6,3 +6,4 @@ tqdm
 python-dotenv
 google-genai
 requests
+uvicorn
